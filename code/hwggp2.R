@@ -1,15 +1,14 @@
 #! /usr/bin/Rscript --vanilla
 ############################################
-### File:		hwggp2.R
+### File:	hwggp2.R
 ### Author:	Blanca A. Vargas-Govea
 ### Email:	blanca.vg@gmail.com
-### Date:		26-Oct-2010
-### Data:		diamonds.tab,diamondstoy.tab
+### Date:	26-Oct-2010
+### Data:	diamonds.tab,diamondstoy.tab
 ############################################
 library(ggplot2)
 library(proto)
 
-args <- commandArgs(TRUE)
 
 data(diamonds)
 qplot(carat, price, data = diamonds)
